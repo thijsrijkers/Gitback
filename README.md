@@ -21,7 +21,7 @@ With Gitback your work flow will be improved and all your files and links will b
 -Multiple code languages support [WIP] 📦
 <br>
 =============================================================================
-<h2> Screenshot client </h2>
+<h3> Screenshot client </h3>
 <h3> latest version 0.0.1 </h3>
 <img src="https://i.gyazo.com/15041b9c61bdba918909cec30f16d909.png" alt="Smiley face" height="75%" width="75%">
 <br>
