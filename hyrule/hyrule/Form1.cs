@@ -17,6 +17,8 @@ namespace hyrule
 {
     public partial class Form1 : Form
     {
+        string filePathSave;
+        int visible = 0;
         public class hyperlinks
         {
             public int hyperlink_id { get; set; }
@@ -81,6 +83,10 @@ namespace hyrule
                 pictureBox1.ImageLocation = "https://avatars.githubusercontent.com/" + text + "";
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+            panel22.Visible = false;
+            panel24.Visible = false;
+            button2.Visible = false;
+            listBox1.Visible = false;
         }
 
         private OpenFileDialog openFileDialog1;
@@ -136,9 +142,25 @@ namespace hyrule
 
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string targetPath = Path.Combine(Environment.CurrentDirectory, @"apploc\"+ listBox1.Text);
-            Console.WriteLine("" + targetPath + "");
-            System.Diagnostics.Process.Start(targetPath);
+            textBox4.Text = "";
+            textBox3.Text = "";
+            int i = 0;
+            string targetPath = Path.Combine(Environment.CurrentDirectory, @"apploc\" + listBox1.Text);
+            string text = System.IO.File.ReadAllText(targetPath);
+            textBox3.Text = text;
+            filePathSave = targetPath;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(filePathSave);
+            while ((text = file.ReadLine()) != null)
+            {
+                textBox4.Text += i + 1 + "\n" + "\t";
+                i++;
+            }
+            file.Close();
+            
+            //string targetPath = Path.Combine(Environment.CurrentDirectory, @"apploc\"+ listBox1.Text);
+            //Console.WriteLine("" + targetPath + "");
+            //System.Diagnostics.Process.Start(targetPath);
         }
 
         private void Button8_Click(object sender, EventArgs e)
@@ -244,6 +266,79 @@ namespace hyrule
         private void TextBox26_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+            textBox4.Text = "";
+            openFileDialog1 = new OpenFileDialog();
+            button2.Click += new EventHandler(Button2_Click);
+
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                int i = 0;
+                string filename = openFileDialog1.FileName;
+                String result = Path.GetFileName(openFileDialog1.FileName);
+                string text = System.IO.File.ReadAllText(filename);
+                textBox3.Text = text;
+                filePathSave = openFileDialog1.FileName;
+  
+                System.IO.StreamReader file = new System.IO.StreamReader(filePathSave);
+                while ((text = file.ReadLine()) != null)
+                {
+                    textBox4.Text += i + 1 + "\n" + "\t";
+                    i++;
+                }
+                file.Close();
+            }
+            Console.WriteLine(filePathSave);
+            Console.WriteLine(filePathSave);
+            Console.WriteLine(filePathSave);
+            Console.WriteLine(filePathSave);
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button6_Click_1(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter(filePathSave);
+            txt.Write(textBox3.Text);
+            txt.Close();
+            textBox3.Text = "";
+            textBox4.Text = "";
+        }
+
+        private void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            if (visible == 0)
+            {
+                panel22.Visible = true;
+                panel24.Visible = true;
+                button2.Visible = true;
+                listBox1.Visible = true;
+                visible = 1;
+            }
+            else
+            {
+                panel22.Visible = false;
+                panel24.Visible = false;
+                button2.Visible = false;
+                listBox1.Visible = false;
+                visible = 0;
+            }
         }
     }
 }

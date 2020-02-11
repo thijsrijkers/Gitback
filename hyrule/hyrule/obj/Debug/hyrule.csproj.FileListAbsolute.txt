@@ -34,7 +34,6 @@ D:\!Gitback\hyrule\hyrule\obj\Debug\hyrule.pdb
 D:\!!Gitback\hyrule\hyrule\bin\Debug\hyrule.exe.config
 D:\!!Gitback\hyrule\hyrule\bin\Debug\hyrule.exe
 D:\!!Gitback\hyrule\hyrule\bin\Debug\hyrule.pdb
-D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.csprojAssemblyReference.cache
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.Form1.resources
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.Properties.Resources.resources
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.Splash.resources
