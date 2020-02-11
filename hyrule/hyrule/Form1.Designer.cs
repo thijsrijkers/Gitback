@@ -37,11 +37,14 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox26 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -83,6 +86,7 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -132,7 +136,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(32, 30);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 897);
+            this.listBox1.Size = new System.Drawing.Size(119, 897);
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
@@ -144,7 +148,7 @@
             this.Show.Name = "Show";
             this.Show.Size = new System.Drawing.Size(119, 50);
             this.Show.TabIndex = 3;
-            this.Show.Text = "REFRESH";
+            this.Show.Text = "DELETE LIST";
             this.Show.UseVisualStyleBackColor = false;
             this.Show.Click += new System.EventHandler(this.Show_Click);
             // 
@@ -188,6 +192,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel20);
+            this.panel1.Controls.Add(this.textBox25);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button1);
@@ -195,6 +201,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1718, 55);
             this.panel1.TabIndex = 11;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel20.Controls.Add(this.button5);
+            this.panel20.Location = new System.Drawing.Point(271, 17);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(122, 27);
+            this.panel20.TabIndex = 20;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(16, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(88, 27);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Search";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // textBox25
+            // 
+            this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox25.Font = new System.Drawing.Font("Myriad Pro Light", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.textBox25.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox25.Location = new System.Drawing.Point(25, 17);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(228, 27);
+            this.textBox25.TabIndex = 10;
+            this.textBox25.TextChanged += new System.EventHandler(this.TextBox25_TextChanged);
             // 
             // textBox2
             // 
@@ -220,8 +262,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel7.Controls.Add(this.textBox26);
             this.panel7.Controls.Add(this.listBox2);
-            this.panel7.Controls.Add(this.button3);
             this.panel7.Controls.Add(this.textBox24);
             this.panel7.Controls.Add(this.textBox23);
             this.panel7.Controls.Add(this.textBox22);
@@ -230,6 +272,18 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(480, 771);
             this.panel7.TabIndex = 0;
+            // 
+            // textBox26
+            // 
+            this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox26.Font = new System.Drawing.Font("Myriad Pro Light", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox26.ForeColor = System.Drawing.SystemColors.Info;
+            this.textBox26.Location = new System.Drawing.Point(21, 725);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(434, 20);
+            this.textBox26.TabIndex = 26;
+            this.textBox26.Text = resources.GetString("textBox26.Text");
             // 
             // listBox2
             // 
@@ -243,18 +297,6 @@
             this.listBox2.Size = new System.Drawing.Size(434, 390);
             this.listBox2.TabIndex = 23;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Location = new System.Drawing.Point(21, 721);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 35);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox24
             // 
@@ -279,6 +321,7 @@
             this.textBox23.Size = new System.Drawing.Size(368, 20);
             this.textBox23.TabIndex = 24;
             this.textBox23.Text = "Thijs.R";
+            this.textBox23.TextChanged += new System.EventHandler(this.TextBox23_TextChanged);
             // 
             // textBox22
             // 
@@ -301,6 +344,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(191, 197);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // panel3
             // 
@@ -735,6 +779,7 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel20.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -811,11 +856,14 @@
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBox26;
     }
 }
 

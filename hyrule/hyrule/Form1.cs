@@ -31,7 +31,14 @@ namespace hyrule
             string[] files = Directory.GetFiles(Path.Combine(Environment.CurrentDirectory, @"apploc\"));
             foreach (string file in files)
             {
-                listBox1.Items.Add(Path.GetFileNameWithoutExtension(file));
+                if (file.ToString().Equals("gitname.txt") || file.ToString().Equals("links.txt"))
+                {
+                    Console.WriteLine(file);
+                }
+                else
+                {
+                    listBox1.Items.Add(Path.GetFileName(file));
+                }
             }
             button8.FlatStyle = FlatStyle.Flat;
             button8.FlatAppearance.BorderColor = BackColor;
@@ -65,6 +72,15 @@ namespace hyrule
                 listBox2.DataSource = hll;
                 listBox2.DisplayMember = "hyperlink_name";
                 listBox2.ValueMember = "hyperlink_id";
+
+            if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt")))
+            {
+                Console.WriteLine("File Existed in Map");
+                string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+                textBox23.Text = text;
+                pictureBox1.ImageLocation = "https://avatars.githubusercontent.com/" + text + "";
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
 
         private OpenFileDialog openFileDialog1;
@@ -87,16 +103,25 @@ namespace hyrule
                 string destFile = System.IO.Path.Combine(targetPath, result);
                 System.IO.File.Copy(filename, destFile, true);
             }
+            Show_Click();
         }
 
-        private void Show_Click(object sender, EventArgs e)
+        private void Show_Click()
         {
             listBox1.Items.Clear();
             string[] files = Directory.GetFiles(Path.Combine(Environment.CurrentDirectory, @"apploc\"));
             foreach (string file in files)
             {
-                listBox1.Items.Add(Path.GetFileName(file));
+                if (file != "gitname")
+                {
+                    listBox1.Items.Add(Path.GetFileName(file));
+                }
             }
+        }
+
+        public void Show_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Button6_Click(object sender, EventArgs e)
@@ -184,7 +209,41 @@ namespace hyrule
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/thijsrijkers?tab=repositories");
+            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            Process.Start("https://github.com/"+ text + "?tab=repositories");
+        }
+
+        private void TextBox25_TextChanged(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            txt.Write(textBox25.Text);
+            txt.Close();
+            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            textBox23.Text = text;
+            pictureBox1.ImageLocation = "https://avatars.githubusercontent.com/" + text + "";
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void TextBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            textBox23.Text = text;
+            Process.Start("https://github.com/" + text + "");
+        }
+
+        private void TextBox26_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
