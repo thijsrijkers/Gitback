@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hyrule", "hyrule\hyrule.csproj", "{9609BC7B-84A3-438E-A2C8-03859682ED5D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HyruleLauncher", "C:\Users\User\Downloads\HyruleLauncher\HyruleLauncher.vdproj", "{C83C98D8-5BCC-4B9A-A0CF-68A413B28D8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9609BC7B-84A3-438E-A2C8-03859682ED5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9609BC7B-84A3-438E-A2C8-03859682ED5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9609BC7B-84A3-438E-A2C8-03859682ED5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9609BC7B-84A3-438E-A2C8-03859682ED5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83C98D8-5BCC-4B9A-A0CF-68A413B28D8C}.Debug|Any CPU.ActiveCfg = Debug
+		{C83C98D8-5BCC-4B9A-A0CF-68A413B28D8C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {169A0A38-F5D3-413B-BC26-7FBE1C23659D}
+	EndGlobalSection
+EndGlobal

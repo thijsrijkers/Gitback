@@ -1,0 +1,190 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Security;
+using System.Collections;
+using System.Diagnostics;
+using System.Threading;
+
+namespace hyrule
+{
+    public partial class Form1 : Form
+    {
+        public class hyperlinks
+        {
+            public int hyperlink_id { get; set; }
+            public string hyperlink_name { get; set; }
+            public string hyperlink_link { get; set; }
+        }
+
+        List<hyperlinks> hll = new List<hyperlinks>();
+        public Form1()
+        {
+            InitializeComponent();
+            string[] files = Directory.GetFiles(Path.Combine(Environment.CurrentDirectory, @"apploc\"));
+            foreach (string file in files)
+            {
+                listBox1.Items.Add(Path.GetFileNameWithoutExtension(file));
+            }
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.FlatAppearance.BorderColor = BackColor;
+            button8.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button8.FlatAppearance.MouseOverBackColor = Color.Transparent;
+
+                hyperlinks link1 = new hyperlinks();
+                link1.hyperlink_id = 1;
+                link1.hyperlink_name = "Reddit";
+                link1.hyperlink_link = "www.reddit.com";
+                hll.Add(link1);
+
+                hyperlinks link2 = new hyperlinks();
+                link2.hyperlink_id = 2;
+                link2.hyperlink_name = "Mail";
+                link2.hyperlink_link = "https://portal.office.com/";
+                hll.Add(link2);
+
+                hyperlinks link3 = new hyperlinks();
+                link3.hyperlink_id = 3;
+                link3.hyperlink_name = "Youtube";
+                link3.hyperlink_link = "www.youtube.com";
+                hll.Add(link3);
+
+                hyperlinks link4 = new hyperlinks();
+                link4.hyperlink_id = 4;
+                link4.hyperlink_name = "Twitch";
+                link4.hyperlink_link = "www.twitch.com";
+                hll.Add(link4);
+
+                listBox2.DataSource = hll;
+                listBox2.DisplayMember = "hyperlink_name";
+                listBox2.ValueMember = "hyperlink_id";
+        }
+
+        private OpenFileDialog openFileDialog1;
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog1 = new OpenFileDialog();
+            button2.Click += new EventHandler(Button2_Click);
+
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string filename = openFileDialog1.FileName;
+                string targetPath = Path.Combine(Environment.CurrentDirectory, @"apploc\");
+                string  result = Path.GetFileName(openFileDialog1.FileName);
+                string destFile = System.IO.Path.Combine(targetPath, result);
+                System.IO.File.Copy(filename, destFile, true);
+            }
+        }
+
+        private void Show_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            string[] files = Directory.GetFiles(Path.Combine(Environment.CurrentDirectory, @"apploc\"));
+            foreach (string file in files)
+            {
+                listBox1.Items.Add(Path.GetFileName(file));
+            }
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string targetPath = Path.Combine(Environment.CurrentDirectory, @"apploc\"+ listBox1.Text);
+            Console.WriteLine("" + targetPath + "");
+            System.Diagnostics.Process.Start(targetPath);
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel10_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel9_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel14_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel13_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel18_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel15_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (hyperlinks link in hll)
+            {
+                if (listBox2.SelectedValue.ToString() == link.hyperlink_id.ToString())
+                {
+                    listBox2.Text = link.hyperlink_link.ToString();
+                    string url = link.hyperlink_link.ToString();
+                    Process.Start("" + url + "");
+                    Console.WriteLine(""+url+"");
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/thijsrijkers?tab=repositories");
+        }
+    }
+}
