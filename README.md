@@ -1,4 +1,4 @@
-<img src="https://i.gyazo.com/de918701e11da789638d2defb40aaf52.png" alt="Smiley face" height="250" width="250">
+<img src="https://i.gyazo.com/de918701e11da789638d2defb40aaf52.png" alt="Smiley face" height="50" width="50">
 <b> Gitback </b>
 <br>
 =============================================================================
