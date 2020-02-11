@@ -1,5 +1,5 @@
-<img src="https://i.gyazo.com/de918701e11da789638d2defb40aaf52.png" alt="Smiley face" height="50" width="50">
-<b> Gitback </b>
+<img src="https://i.gyazo.com/de918701e11da789638d2defb40aaf52.png" alt="Smiley face" height="150" width="150">
+<h3> Gitback </h3>
 <br>
 =============================================================================
 Welcome to Gitback!<br>
