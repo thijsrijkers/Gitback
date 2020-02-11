@@ -4,7 +4,7 @@
 =============================================================================
 Welcome to Gitback!<br>
 Gitback is a application who tracks your Github for you and also let you to customize your Gitback page for personal use. <br>
-This project started from a simple application[Hyrule] to a high end application[Gitback!]. (Still in the works tho ;) )<br>
+This project started from a simple application [Hyrule] to a high end application [Gitback!]. (Still in the works tho ;) )<br>
 With Gitback your work flow will be improved and all your files and links will be in one easy to access place.
 <br> <br>
 =============================================================================
