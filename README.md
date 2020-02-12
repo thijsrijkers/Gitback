@@ -22,11 +22,15 @@ With Gitback your work flow will be improved and all your files and links will b
 <br>
 =============================================================================
 <h3> Screenshot client </h3>
-<h3> latest version 0.0.1 </h3>
-<img src="https://i.gyazo.com/15041b9c61bdba918909cec30f16d909.png" alt="Smiley face" height="75%" width="75%">
+<h4> latest version 1.0.0 </h4>
+<img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
 <br>
-<h3> Old version 0.0.0 </h3>
-<img src="https://i.gyazo.com/18fc4573d980034e134520ad7034e01f.png" alt="Smiley face" height="75%" width="75%">
+<b> Old version 0.0.1 </b>
+<br>
+<img src="https://i.gyazo.com/15041b9c61bdba918909cec30f16d909.png" alt="Smiley face" height="40%" width="40%">
+<br>
+<b> Old version 0.0.0 </b>
+<img src="https://i.gyazo.com/18fc4573d980034e134520ad7034e01f.png" alt="Smiley face" height="40%" width="40%">
 <br><br>
 =============================================================================
 <h4>
