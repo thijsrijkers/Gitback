@@ -32,6 +32,10 @@ This is the first official release of Gitback! Gitback is still in developing bu
 -File editting.<br>
 -Favorite site tab creation.<br>
 -Gitback level system.<br>
+-Add repositories.<br>
+-Make repositories.<br>
+-Select file from repository to edit.<br>
+-Commit & push messages.<br>
 -Help page.<br>
 -Settings<br><br>
 <b> Gitback supports: </b>
@@ -40,7 +44,10 @@ This is the first official release of Gitback! Gitback is still in developing bu
 <img src="https://freeiconshop.com/wp-content/uploads/edd/php-flat.png" alt="Smiley face" height="10%" width="10%">
 <br>
 <b> Gitback UI </b><br>
-<img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
+<img src="https://i.gyazo.com/25edde957ccca911d22921f7f1a237e2.png" alt="Smiley face" height="75%" width="75%">
+<br>
+<b> Repository UI </b><br>
+<img src="https://i.gyazo.com/a10572028e9b6d6d6baac023c8191b65.png" alt="Smiley face" height="75%" width="75%">
 <br>
 =============================================================================
 <h4>
