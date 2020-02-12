@@ -21,6 +21,24 @@ With Gitback your work flow will be improved and all your files and links will b
 -Multiple code languages support [WIP] 📦
 <br>
 =============================================================================
+<b> Release GitBack 1.0.0</b> <br>
+<br>
+This is the first official release of Gitback! Gitback is still in developing but at this point we can release this version of Gitback already :D. <br>
+
+functionalities:<br>
+-Adding files to your list to work on.<br>
+-Set your own Github account in Gitback.<br>
+-Search someones Github and there repositories.<br>
+-File editting.<br>
+-Favorite site tab creation.<br>
+-Gitback level system.<br>
+-Help page.<br>
+-Settings<br><br>
+
+<img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
+<img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
+Functionalities:
+=============================================================================
 <h3> Screenshot client </h3>
 <h4> latest version 1.0.0 </h4>
 <img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
