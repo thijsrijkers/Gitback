@@ -37,7 +37,7 @@ This is the first official release of Gitback! Gitback is still in developing bu
 <b> Gitback when started up. </b><br>
 <img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
 <br><br>
-<b> Opened my list and added files to it. Also searched someones Github and mean while editting code. </b><br>
+<b> Opened my list and added files to it. Also searched someones Github and meanwhile editting code. </b><br>
 <img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
 <br>
 =============================================================================
