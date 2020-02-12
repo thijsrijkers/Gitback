@@ -34,9 +34,9 @@ functionalities:<br>
 -Gitback level system.<br>
 -Help page.<br>
 -Settings<br><br>
-<b> Gitback when started up. </b>
+<b> Gitback when started up. </b><br>
 <img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
-<b> Opened my list and added files to it. Also searched someones Github and mean while editting code. </b>
+<b> Opened my list and added files to it. Also searched someones Github and mean while editting code. </b><br>
 <img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
 =============================================================================
 <h3> Screenshot client </h3>
