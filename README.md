@@ -25,7 +25,7 @@ With Gitback your work flow will be improved and all your files and links will b
 <br>
 This is the first official release of Gitback! Gitback is still in developing but at this point we can release this version of Gitback already :D. <br>
 
-<b>functionalities:</b><br>
+<b>functionalities</b><br>
 -Adding files to your list to work on.<br>
 -Set your own Github account in Gitback.<br>
 -Search someones Github and there repositories.<br>
