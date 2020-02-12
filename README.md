@@ -25,7 +25,7 @@ With Gitback your work flow will be improved and all your files and links will b
 <br>
 This is the first official release of Gitback! Gitback is still in developing but at this point we can release this version of Gitback already :D. <br>
 
-functionalities:<br>
+<b>functionalities:</b><br>
 -Adding files to your list to work on.<br>
 -Set your own Github account in Gitback.<br>
 -Search someones Github and there repositories.<br>
@@ -38,6 +38,7 @@ functionalities:<br>
 <img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
 <b> Opened my list and added files to it. Also searched someones Github and mean while editting code. </b><br>
 <img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
+<br>
 =============================================================================
 <h3> Screenshot client </h3>
 <h4> latest version 1.0.0 </h4>
