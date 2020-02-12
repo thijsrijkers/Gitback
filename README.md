@@ -37,7 +37,7 @@ This is the first official release of Gitback! Gitback is still in developing bu
 <b> Gitback supports: </b>
 <br><br>
 <img src="https://www.logolynx.com/images/logolynx/31/314235e860063a3ae3ccec39d3287c80.png" alt="Smiley face" height="25%" width="25%">
-<img src="https://freeiconshop.com/wp-content/uploads/edd/php-flat.png" alt="Smiley face" height="5%" width="5%">
+<img src="https://freeiconshop.com/wp-content/uploads/edd/php-flat.png" alt="Smiley face" height="10%" width="10%">
 <br>
 <b> Gitback when started up. </b><br>
 <img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
