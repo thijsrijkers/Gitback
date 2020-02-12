@@ -18,6 +18,7 @@ namespace hyrule
     public partial class Form1 : Form
     {
         string filePathSave;
+        string filePathReposFile;
         int visible = 0;
         public class hyperlinks
         {
@@ -110,6 +111,24 @@ namespace hyrule
             listBox1.Visible = false;
             panel12.Visible = false;
             panel13.Visible = false;
+        }
+
+        internal void repos_Direct(string targetPath)
+        {
+            textBox3.Text = "";
+            textBox4.Text = "";
+            int i = 0;
+            string text = System.IO.File.ReadAllText(targetPath);
+            textBox3.Text = text;
+            filePathSave = targetPath;
+
+                System.IO.StreamReader file = new System.IO.StreamReader(filePathSave);
+                while ((text = file.ReadLine()) != null)
+                {
+                    textBox4.Text += i + 1 + "\n" + "\t";
+                    i++;
+                }
+                file.Close();
         }
 
         private void xpcheck()
@@ -645,6 +664,13 @@ namespace hyrule
         private void Panel16_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            Form2 Check = new Form2();
+            Check.Show();
+            Hide();
         }
     }
 }

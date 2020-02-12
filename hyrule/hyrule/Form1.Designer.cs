@@ -87,6 +87,7 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -209,7 +210,7 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button14.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.button14.Location = new System.Drawing.Point(135, 8);
+            this.button14.Location = new System.Drawing.Point(138, 8);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(50, 44);
             this.button14.TabIndex = 34;
@@ -711,9 +712,9 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panel12.Controls.Add(this.button16);
             this.panel12.Controls.Add(this.textBox7);
-            this.panel12.Location = new System.Drawing.Point(211, 70);
+            this.panel12.Location = new System.Drawing.Point(267, 67);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(214, 77);
+            this.panel12.Size = new System.Drawing.Size(214, 84);
             this.panel12.TabIndex = 33;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel12_Paint);
             // 
@@ -753,9 +754,9 @@
             this.panel13.Controls.Add(this.textBox10);
             this.panel13.Controls.Add(this.textBox9);
             this.panel13.Controls.Add(this.textBox8);
-            this.panel13.Location = new System.Drawing.Point(211, 70);
+            this.panel13.Location = new System.Drawing.Point(214, 67);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(228, 280);
+            this.panel13.Size = new System.Drawing.Size(228, 283);
             this.panel13.TabIndex = 31;
             this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel13_Paint);
             // 
@@ -830,6 +831,22 @@
             this.textBox8.TabIndex = 35;
             this.textBox8.TextChanged += new System.EventHandler(this.TextBox8_TextChanged);
             // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button18.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.button18.Location = new System.Drawing.Point(186, 98);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(41, 55);
+            this.button18.TabIndex = 35;
+            this.button18.Text = "⌨️";
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.Button18_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -838,6 +855,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button18);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.button15);
@@ -947,6 +965,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Button button18;
     }
 }
 

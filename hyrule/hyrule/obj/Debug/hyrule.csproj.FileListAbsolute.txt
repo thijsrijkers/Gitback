@@ -41,3 +41,4 @@ D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.csproj.GenerateResource.cache
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.csproj.CoreCompileInputs.cache
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.exe
 D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.pdb
+D:\!!Gitback\hyrule\hyrule\obj\Debug\hyrule.Form2.resources
