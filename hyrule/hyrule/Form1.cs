@@ -265,7 +265,7 @@ namespace hyrule
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitnameaccount.txt"));
             Process.Start("https://github.com/"+ text + "?tab=repositories");
         }
 
@@ -313,7 +313,7 @@ namespace hyrule
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitname.txt"));
+            string text = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, @"apploc\" + "gitnameaccount.txt"));
             textBox23.Text = text;
             Process.Start("https://github.com/" + text + "");
         }
