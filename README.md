@@ -22,7 +22,7 @@ With Gitback your work flow will be improved and all your files and links will b
 <br>
 =============================================================================
 <br>
-<b> Release GitBack 1.0.0</b> <br>
+<b> Release GitBack 1.0.0</b>[Only supporting 1920x1080 or higher monitors <br>
 <br>
 This is the first official release of Gitback! Gitback is still in developing but at this point we can release this version of Gitback already :D. <br><br>
 <b>functionalities:</b><br>
