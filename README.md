@@ -22,7 +22,7 @@ With Gitback your work flow will be improved and all your files and links will b
 <br>
 =============================================================================
 <br>
-<b> Release GitBack 1.0.0</b> <br>
+<b> Release GitBack 1.0.0</b>  [Only supporting 1920x1080 or higher monitors]<br>
 <br>
 This is the first official release of Gitback! Gitback is still in developing but at this point we can release this version of Gitback already :D. <br><br>
 <b>functionalities:</b><br>
@@ -32,26 +32,23 @@ This is the first official release of Gitback! Gitback is still in developing bu
 -File editting.<br>
 -Favorite site tab creation.<br>
 -Gitback level system.<br>
+-Add repositories.<br>
+-Make repositories.<br>
+-Select file from repository to edit.<br>
+-Commit & push messages.<br>
 -Help page.<br>
 -Settings<br><br>
-<b> Gitback when started up. </b><br>
-<img src="https://i.gyazo.com/3946f3c1d19362fb305e57a12031a061.png" alt="Smiley face" height="75%" width="75%">
+<b> Gitback supports: </b>
 <br><br>
-<b> Opened my list and added files to it. Also searched someones Github and meanwhile editting code. </b><br>
-<img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
+<img src="https://www.logolynx.com/images/logolynx/31/314235e860063a3ae3ccec39d3287c80.png" alt="Smiley face" height="25%" width="25%">
+<img src="https://freeiconshop.com/wp-content/uploads/edd/php-flat.png" alt="Smiley face" height="10%" width="10%">
 <br>
-=============================================================================
-<h3> Screenshot client </h3>
-<h4> latest version 1.0.0 </h4>
-<img src="https://i.gyazo.com/35658e8df48e85fc6bac660988171d6d.png" alt="Smiley face" height="75%" width="75%">
+<b> Gitback UI </b><br>
+<img src="https://i.gyazo.com/25edde957ccca911d22921f7f1a237e2.png" alt="Smiley face" height="75%" width="75%">
 <br>
-<b> Old version 0.0.1 </b>
+<b> Repository UI </b><br>
+<img src="https://i.gyazo.com/a10572028e9b6d6d6baac023c8191b65.png" alt="Smiley face" height="75%" width="75%">
 <br>
-<img src="https://i.gyazo.com/15041b9c61bdba918909cec30f16d909.png" alt="Smiley face" height="40%" width="40%">
-<br>
-<b> Old version 0.0.0 </b>
-<img src="https://i.gyazo.com/18fc4573d980034e134520ad7034e01f.png" alt="Smiley face" height="40%" width="40%">
-<br><br>
 =============================================================================
 <h4>
 Disclaimer:<br></h4>
